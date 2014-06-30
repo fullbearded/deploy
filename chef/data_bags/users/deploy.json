@@ -1,0 +1,9 @@
+{
+  "id": "deploy",
+  "password": "$1$nJW/Shbh$VsjvVOfcbS8p9QtEniwcN1",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDF1bFPYwdhcXDKQbcVaSchASELiSUAv23GD5lK8tYqXPHjdzx4Nf8bP18yD7itC2zErXORnlSDRxUAnajFZkvhv5MUnqudhqGEWVqC3syoumFbYyzR4Pv535rNQr3Ea7vdFtL0bG3vJHARUcwzNKdABiWmCT+wrgGWPpQeyxYG7M1Bdv6SoTdgbvhU+MxxkRuMhEINpQ6lxVhoWrJb5N/dv6tcnHC7LmTErWgDqFC4amN7rhG88tRXuTwMoGqhotU+NR1wIU4ldPHP2RviX38XkV4F6CIwR/zi+EFux484cfD4ThK++2qYJa8N0k7urym0ADc+Vphq0OyHXscJK4ST hdhu@192.168.2.105"
+  ],
+  "groups": [ "sysadmin"],
+  "shell": "\/bin\/bash"
+}

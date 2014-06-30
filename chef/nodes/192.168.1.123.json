@@ -1,0 +1,14 @@
+{
+  "environment":"production",
+  "authorization": {
+    "sudo": {
+      "users": ["deploy"]
+    }
+  },
+  "run_list": [
+    "role[server]"
+  ],
+  "automatic": {
+    "ipaddress": "192.168.1.123"
+  }
+}

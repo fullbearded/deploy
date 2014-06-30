@@ -1,0 +1,15 @@
+DEPENDENCIES
+  build-essential
+  openssl
+  sudo
+  users
+  vim
+
+GRAPH
+  build-essential (2.0.4)
+  chef-sugar (2.0.0)
+  openssl (2.0.0)
+    chef-sugar (>= 0.0.0)
+  sudo (2.6.0)
+  users (1.7.0)
+  vim (1.1.2)

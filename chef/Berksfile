@@ -1,0 +1,7 @@
+site :opscode
+
+cookbook 'openssl'
+cookbook 'build-essential' # this is for source code for compile
+cookbook 'users'
+cookbook 'sudo'
+cookbook 'vim'
