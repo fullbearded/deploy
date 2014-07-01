@@ -20,15 +20,13 @@
     },
     "json_class": "Chef::Role",
     "run_list": [
-        // because secure passwords are nice
-        "openssl",
-        // for building things
-        "build-essential",
-        // setup standard sys admin users
-        "users::sysadmins",
-        // make sure deploy user has sudo rights
-        "sudo",
-        "vim"
+        "recipe[yum]",
+        "recipe[openssl]",
+        "recipe[build-essential]",
+        "recipe[users::sysadmins]",
+        "recipe[sudo]",
+        "recipe[vim]",
+        "recipe[git]"
     ],
     "chef_type": "role",
     "override_attributes": {

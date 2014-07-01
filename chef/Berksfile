@@ -1,7 +1,16 @@
 site :opscode
 
+cookbook 'yum'
 cookbook 'openssl'
 cookbook 'build-essential' # this is for source code for compile
+cookbook 'git'
+cookbook 'vim'
+
 cookbook 'users'
 cookbook 'sudo'
-cookbook 'vim'
+
+cookbook 'ruby_build'
+cookbook 'rbenv', github: 'fnichol/chef-rbenv'
+
+cookbook 'nginx'
+cookbook 'mongodb', git: 'git@github.com:edelight/chef-mongodb.git', ref: "HEAD"
