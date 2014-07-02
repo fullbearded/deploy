@@ -14,3 +14,5 @@ cookbook 'rbenv', github: 'fnichol/chef-rbenv'
 
 cookbook 'nginx'
 cookbook 'mongodb', git: 'git@github.com:edelight/chef-mongodb.git', ref: "HEAD"
+cookbook 'memcached'
+cookbook 'mysql', github: 'opscode-cookbooks/mysql'

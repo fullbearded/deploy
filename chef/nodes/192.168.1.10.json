@@ -1,0 +1,18 @@
+{
+    "environment": "production",
+    "authorization": {
+        "sudo": {
+            "groups": ["sysadmin"],
+            "users": ["deploy"],
+            "passwordless": "false"
+        }
+    },
+    "run_list": [
+        "role[server-base]",
+        "role[nginx]",
+        "role[memcached]"
+    ],
+    "automatic": {
+        "ipaddress": "192.168.1.10"
+    }
+}
