@@ -14,6 +14,7 @@ DEPENDENCIES
   rbenv
     git: git://github.com/fnichol/chef-rbenv.git
     revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+  redis
   ruby_build
   sudo
   users
@@ -35,11 +36,13 @@ GRAPH
     windows (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  install_from (3.0.4)
   java (1.22.0)
   memcached (1.7.2)
     runit (~> 1.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  metachef (3.0.4)
   mongodb (0.16.1)
     apt (>= 1.8.2)
     python (>= 0.0.0)
@@ -63,6 +66,10 @@ GRAPH
   rbenv (0.7.3)
     java (> 1.4.0)
     ruby_build (>= 0.0.0)
+  redis (3.0.4)
+    install_from (>= 0.0.0)
+    metachef (>= 0.0.0)
+    runit (>= 0.0.0)
   rsyslog (1.12.2)
   ruby_build (0.8.0)
   runit (1.5.10)
