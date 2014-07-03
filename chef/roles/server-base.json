@@ -23,6 +23,7 @@
         "recipe[yum]",
         "recipe[openssl]",
         "recipe[build-essential]",
+        "recipe[server-basic]", // include server basic directory and package
         "recipe[users::sysadmins]",
         "recipe[sudo]",
         "recipe[vim]",
