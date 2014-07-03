@@ -20,6 +20,7 @@
 ## Usage
 
 1. 获取项目库并安装对应的gem包
+
 <pre> 
 git clone https://github.com/huhongda/deploy 
 
@@ -45,6 +46,7 @@ bundle exec knife solo prepare root@yourserverip
 3. 修改节点配置文件，加入需要安装的角色
 
 4. 部署服务器环境 
+
 <pre>
 bundle exec knife solo cook root@yourserverip
 </pre>
