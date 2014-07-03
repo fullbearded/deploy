@@ -1,0 +1,42 @@
+{
+    "name": "mysql-server",
+    "description": "MySQL Server",
+    "default_attributes": {
+        "mysql": {
+            // only allow root login via localhost (e.g.
+            // ssh tunnel).
+            "allow_remote_root": false,
+            // remote the default test database
+            "remote_test_database": true,
+            // remove the anonymous testing users
+            "remove_anonymous_users":true,
+
+            "client": {
+                "packages": ["mysql-client", "libmysqlclient-dev","ruby-mysql"]
+            },
+            "bind_address":"127.0.0.1",
+            // this is for test password
+            "server_root_password": "123456",
+            "data_dir": "/data/data/mysql"
+//            "server": {
+//                "socket": "/tmp/mysql.sock",
+//                "pid_file": "/data/pids/mysqld.pid",
+//                "basedir": "/usr/local/mysql",
+//                "slow_query_log": true,
+//                "slow_query_log_file": "/data/logs/mysql/slowquery.log",
+//                "tmpdir": ["/data/data/mysql"]
+//            },
+//            "tunable": {
+//                "log_error": "/data/logs/mysql/error.log",
+//                "long_query_time": 0.5
+//            }
+        }
+    },
+    "json_class": "Chef::Role",
+    "run_list": [
+        "mysql::client",
+        "mysql::server"
+//        "mysql::server_deprecated"
+    ],
+    "chef_type": "role"
+}

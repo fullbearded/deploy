@@ -4,7 +4,7 @@
     "default_attributes": {
         "mongodb": {
             "config": {
-                "dbpath": "/data/mongodb",
+                "dbpath": "/data/data/mongodb",
                 "logpath": "/data/logs/mongodb/mongodb.log"
             }
         }

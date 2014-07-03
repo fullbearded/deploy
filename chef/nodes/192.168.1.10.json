@@ -10,7 +10,8 @@
     "run_list": [
         "role[server-base]",
         "role[nginx]",
-        "role[memcached]"
+        "role[memcached]",
+        "role[mysql-server]"
     ],
     "automatic": {
         "ipaddress": "192.168.1.10"
