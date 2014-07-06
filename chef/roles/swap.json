@@ -1,0 +1,13 @@
+{
+    "name": "swap",
+    "description": "swap configure",
+    "default_attributes": {
+    },
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[chef-swap]"
+    ],
+    "chef_type": "role",
+    "override_attributes": {
+    }
+}
