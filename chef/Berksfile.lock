@@ -4,11 +4,11 @@ DEPENDENCIES
   memcached
   mongodb
     git: git@github.com:edelight/chef-mongodb.git
-    revision: f5852bfe5964077b93c137d355061868771aec1a
+    revision: 634047d50ed798955b5c7e17187bdf2b9972a5e3
     ref: HEAD
   mysql
     git: git://github.com/opscode-cookbooks/mysql.git
-    revision: a5f470a542f4ad92ccaef831eb92d537877c1b3a
+    revision: abf418550a534cee433ded5f85a85f3296a9709e
   nginx
   openssl
   rbenv
@@ -16,6 +16,7 @@ DEPENDENCIES
     revision: 0a3018634bafe58ad21c6ee271af015220e444b9
   redis
   ruby_build
+  simple_iptables
   sudo
   users
   vim
@@ -76,6 +77,7 @@ GRAPH
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
+  simple_iptables (0.6.4)
   sudo (2.6.0)
   users (1.7.0)
   vim (1.1.2)

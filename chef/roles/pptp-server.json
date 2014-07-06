@@ -1,0 +1,13 @@
+{
+    "name": "pptp-server",
+    "description": "PPTP configure",
+    "default_attributes": {
+    },
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[chef-pptp-server]"
+    ],
+    "chef_type": "role",
+    "override_attributes": {
+    }
+}
