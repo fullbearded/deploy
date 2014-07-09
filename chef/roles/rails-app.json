@@ -17,8 +17,8 @@
     },
     "json_class": "Chef::Role",
     "run_list": [
-        "recipe[rbenv::system]",
-        "recipe[ruby_build]"
+        "recipe[ruby_build]",
+        "recipe[rbenv::system]"
     ],
     "chef_type": "role",
     "override_attributes": {

@@ -6,6 +6,9 @@ DEPENDENCIES
     git: git@github.com:edelight/chef-mongodb.git
     revision: 634047d50ed798955b5c7e17187bdf2b9972a5e3
     ref: HEAD
+  monit
+    git: https://github.com/phlipper/chef-monit.git
+    revision: 9aecee976641ad2f9b3b3c1924d6ce97b8a17216
   mysql
     git: git://github.com/opscode-cookbooks/mysql.git
     revision: abf418550a534cee433ded5f85a85f3296a9709e
@@ -49,6 +52,8 @@ GRAPH
     python (>= 0.0.0)
     runit (>= 1.5.0)
     yum (>= 3.0.0)
+  monit (1.5.4)
+    build-essential (>= 0.0.0)
   mysql (5.3.6)
     yum-mysql-community (>= 0.0.0)
   nginx (2.7.4)

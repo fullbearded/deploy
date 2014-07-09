@@ -1,0 +1,40 @@
+{
+    "name": "monit",
+    "description": "monit",
+    "default_attributes": {
+        "fqdn": "127.0.0.1",
+        "monit": {
+            "polling_frequency": 15,
+            "logfile": "/data/logs/monit/monit.log",
+            "statefile": "/data/data/monit/state",
+            "alert_email": "root@localhost",
+            "web_interface": {
+                "enable": true,
+                "port": 2812,
+                "address": "localhost",
+                "allow": ["localhost", "admin:b1gbr0th3r"]
+            },
+            "mail": {
+                "hostname": "localhost",
+                "port":     25,
+                "username": null,
+                "password": null,
+                "encrypted_credentials": null,
+                "encrypted_credentials_data_bag": "credentials",
+                "from":     "monit@$HOST",
+                "subject":  "$SERVICE $EVENT at $DATE",
+                "message":  "Monit $ACTION $SERVICE at $DATE on $HOST,\n\n$DESCRIPTION\n\nDutifully,\nMonit",
+                "security": null,
+                "timeout":  30,
+                "using_hostname": null
+            }
+        }
+    },
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[monit::default]"
+    ],
+    "chef_type": "role",
+    "override_attributes": {
+    }
+}

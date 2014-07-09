@@ -5,7 +5,11 @@
         "mongodb": {
             "config": {
                 "dbpath": "/data/data/mongodb",
-                "logpath": "/data/logs/mongodb/mongodb.log"
+                "logpath": "/data/logs/mongodb/mongodb.log",
+                "pidfilepath": "/data/pids/mongod.pid",
+                "logappend": true,
+                "fork": true,
+                "bind_ip": "127.0.0.1"
             }
         }
     },
