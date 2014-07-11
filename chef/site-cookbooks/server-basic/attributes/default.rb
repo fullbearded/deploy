@@ -5,6 +5,6 @@ default['server-basic']['basic_directorys'] = [
 ]
 
 default['server-basic']['basic_package'] = [
-    "tree"
+    "tree", "tar"
 ]
 

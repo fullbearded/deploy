@@ -7,12 +7,15 @@
             "data_dir": "/data/data/redis",
             "home_dir": "/usr/local/redis",
             "pid_file": "/data/pids/redis.pid",
-            "db_basename": "redis-server.rdb"
+            "db_basename": "redis-server.rdb",
+            "server": {
+                "addr": "127.0.0.1"
+            }
         }
     },
     "json_class": "Chef::Role",
     "run_list": [
-        "redis"
+        "chef-redis-server::default"
     ],
     "chef_type": "role"
 }

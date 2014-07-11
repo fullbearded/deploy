@@ -18,6 +18,5 @@ cookbook 'nginx'
 cookbook 'mongodb', git: 'git@github.com:edelight/chef-mongodb.git', ref: "HEAD"
 cookbook 'memcached'
 cookbook 'mysql', github: 'opscode-cookbooks/mysql'
-cookbook 'redis'
 cookbook 'monit', git: 'https://github.com/phlipper/chef-monit.git'
-
+cookbook 'chef-redis-server', git: 'https://github.com/huhongda/chef-redis-server.git'

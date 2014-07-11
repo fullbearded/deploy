@@ -1,10 +1,13 @@
 DEPENDENCIES
   build-essential
+  chef-redis-server
+    git: https://github.com/huhongda/chef-redis-server.git
+    revision: 8337966d4b285633a0f483bf167098f29c81dd4a
   git
   memcached
   mongodb
     git: git@github.com:edelight/chef-mongodb.git
-    revision: 634047d50ed798955b5c7e17187bdf2b9972a5e3
+    revision: dda37fbddee4a3dd041839bc98f1cc1444dc74f7
     ref: HEAD
   monit
     git: https://github.com/phlipper/chef-monit.git
@@ -17,7 +20,6 @@ DEPENDENCIES
   rbenv
     git: git://github.com/fnichol/chef-rbenv.git
     revision: 0a3018634bafe58ad21c6ee271af015220e444b9
-  redis
   ruby_build
   simple_iptables
   sudo
@@ -30,6 +32,8 @@ GRAPH
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
   build-essential (2.0.4)
+  chef-redis-server (0.0.2)
+    install_from (>= 0.0.0)
   chef-sugar (2.0.0)
   chef_handler (1.1.6)
   dmg (2.2.0)
@@ -46,7 +50,6 @@ GRAPH
     runit (~> 1.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
-  metachef (3.0.4)
   mongodb (0.16.1)
     apt (>= 1.8.2)
     python (>= 0.0.0)
@@ -72,10 +75,6 @@ GRAPH
   rbenv (0.7.3)
     java (> 1.4.0)
     ruby_build (>= 0.0.0)
-  redis (3.0.4)
-    install_from (>= 0.0.0)
-    metachef (>= 0.0.0)
-    runit (>= 0.0.0)
   rsyslog (1.12.2)
   ruby_build (0.8.0)
   runit (1.5.10)
