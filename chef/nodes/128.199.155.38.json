@@ -9,9 +9,9 @@
     },
     "run_list": [
         "role[server-base]",
-        "role[rails-app]",
+        "role[monit]",
         "role[mongo-server]",
-        "role[nginx]"
+        "role[redis-server]"
     ],
     "automatic": {
         "ipaddress": "128.199.155.38"

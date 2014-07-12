@@ -1,5 +1,7 @@
 DEPENDENCIES
   build-essential
+  chef-mongodb
+    path: site-cookbooks/chef-mongodb
   chef-redis-server
     git: https://github.com/huhongda/chef-redis-server.git
     revision: 8337966d4b285633a0f483bf167098f29c81dd4a
@@ -32,6 +34,8 @@ GRAPH
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
   build-essential (2.0.4)
+  chef-mongodb (0.0.1)
+    mongodb (>= 0.0.0)
   chef-redis-server (0.0.2)
     install_from (>= 0.0.0)
   chef-sugar (2.0.0)

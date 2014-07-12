@@ -20,3 +20,5 @@ cookbook 'memcached'
 cookbook 'mysql', github: 'opscode-cookbooks/mysql'
 cookbook 'monit', git: 'https://github.com/phlipper/chef-monit.git'
 cookbook 'chef-redis-server', git: 'https://github.com/huhongda/chef-redis-server.git'
+
+cookbook 'chef-mongodb', path: 'site-cookbooks/chef-mongodb'

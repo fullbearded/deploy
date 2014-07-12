@@ -2,20 +2,11 @@
     "name": "mongo-server",
     "description": "Mongo DB server",
     "default_attributes": {
-        "mongodb": {
-            "config": {
-                "dbpath": "/data/data/mongodb",
-                "logpath": "/data/logs/mongodb/mongodb.log",
-                "pidfilepath": "/data/pids/mongod.pid",
-                "logappend": true,
-                "fork": true,
-                "bind_ip": "127.0.0.1"
-            }
-        }
     },
     "json_class": "Chef::Role",
     "run_list": [
-        "recipe[mongodb::10gen_repo]"
+        "recipe[chef-mongodb]",
+        "chef-monit-configuration::mongod"
     ],
     "chef_type": "role",
     "override_attributes": {

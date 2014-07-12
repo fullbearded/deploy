@@ -6,7 +6,7 @@
             "user": "www",
             "group": "www",
             "dir": "/usr/local/nginx/conf",
-            "pid": "/data/pids/nginx.pid",
+            "pid": "/data/pids/nginx/nginx.pid",
             "log_dir": "/data/logs/nginx",
             "worker_processes": 5,
             "source": {
