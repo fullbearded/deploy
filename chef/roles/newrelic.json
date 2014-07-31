@@ -1,0 +1,12 @@
+{
+    "name": "newrelic",
+    "description": "install newrelic server",
+    "default_attributes": {
+    },
+    "json_class": "Chef::Role",
+    "run_list": [
+        "chef-newrelic::default",
+        "chef-monit-configuration::newrelic"
+    ],
+    "chef_type": "role"
+}

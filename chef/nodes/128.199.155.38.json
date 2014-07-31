@@ -9,9 +9,9 @@
     },
     "run_list": [
         "role[server-base]",
-        "role[monit]",
         "role[mongo-server]",
-        "role[redis-server]"
+        "role[redis-server]",
+        "role[monit]"
     ],
     "automatic": {
         "ipaddress": "128.199.155.38"
