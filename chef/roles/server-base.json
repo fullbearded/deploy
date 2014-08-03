@@ -1,19 +1,11 @@
-// Things we want standard on all server boxes, primarily:
-// - Security
-// - Look and feel
-// - default users, groups etc
 {
     "name": "server",
     "description": "standart server configures",
     "default_attributes": {
         "authorization": {
             "sudo": {
-                // everyone in the group sysadmin gets sudo rights
                 "groups": ["sysadmin"],
-                // the deploy user specifically gets sudo rights
                 "users": ["deploy"],
-                // whether a user with sudo rights has to enter their
-                // password when using sudo
                 "passwordless": "false"
             }
         }
@@ -23,7 +15,7 @@
         "recipe[yum]",
         "recipe[openssl]",
         "recipe[build-essential]",
-        "recipe[server-basic]", // include server basic directory and package
+        "recipe[server-basic]",
         "recipe[users::sysadmins]",
         "recipe[sudo]",
         "recipe[vim]",
