@@ -25,3 +25,7 @@ node['server-basic']['users'].each do |_user, _dirs|
   end
 
 end
+
+yum_package 'ImageMagick' do
+  version '6.5.4.7-7.el6_5'
+end
