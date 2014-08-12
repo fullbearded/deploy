@@ -1,0 +1,17 @@
+{
+    "name": "phantomjs",
+    "description": "install phantomjs",
+    "default_attributes": {
+      'phantomjs': {
+        'base_url': 'https://bitbucket.org/ariya/phantomjs/downloads'
+        'basename': 'phantomjs-1.9.7-linux-x86_64'
+      }
+    },
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[phantomjs]"
+    ],
+    "chef_type": "role",
+    "override_attributes": {
+    }
+}

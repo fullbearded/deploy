@@ -19,6 +19,7 @@ DEPENDENCIES
     revision: abf418550a534cee433ded5f85a85f3296a9709e
   nginx
   openssl
+  phantomjs
   rbenv
     git: git://github.com/fnichol/chef-rbenv.git
     revision: 0a3018634bafe58ad21c6ee271af015220e444b9
@@ -40,6 +41,8 @@ GRAPH
     install_from (>= 0.0.0)
   chef-sugar (2.0.0)
   chef_handler (1.1.6)
+  chocolatey (0.1.0)
+    powershell (>= 0.0.0)
   dmg (2.2.0)
   git (4.0.2)
     build-essential (>= 0.0.0)
@@ -61,6 +64,12 @@ GRAPH
     yum (>= 3.0.0)
   monit (1.5.4)
     build-essential (>= 0.0.0)
+  ms_dotnet2 (1.0.0)
+    windows (>= 0.0.0)
+  ms_dotnet4 (1.0.2)
+    windows (>= 0.0.0)
+  ms_dotnet45 (1.1.2)
+    windows (>= 0.0.0)
   mysql (5.3.6)
     yum-mysql-community (>= 0.0.0)
   nginx (2.7.4)
@@ -73,6 +82,14 @@ GRAPH
   ohai (2.0.1)
   openssl (2.0.0)
     chef-sugar (>= 0.0.0)
+  phantomjs (1.0.3)
+    build-essential (>= 0.0.0)
+    chocolatey (>= 0.0.0)
+  powershell (3.0.7)
+    ms_dotnet2 (>= 0.0.0)
+    ms_dotnet4 (>= 0.0.0)
+    ms_dotnet45 (>= 0.0.0)
+    windows (>= 1.2.8)
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
