@@ -3,7 +3,7 @@
     "description": "install phantomjs",
     "default_attributes": {
       'phantomjs': {
-        'base_url': 'https://bitbucket.org/ariya/phantomjs/downloads'
+        'base_url': 'https://bitbucket.org/ariya/phantomjs/downloads',
         'basename': 'phantomjs-1.9.7-linux-x86_64'
       }
     },
