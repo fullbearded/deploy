@@ -4,12 +4,12 @@ DEPENDENCIES
     path: site-cookbooks/chef-mongodb
   chef-redis-server
     git: https://github.com/huhongda/chef-redis-server.git
-    revision: 8337966d4b285633a0f483bf167098f29c81dd4a
+    revision: 601a3b53ed5b044644cc7bffa317b057031d8c34
   git
   memcached
   mongodb
     git: git@github.com:edelight/chef-mongodb.git
-    revision: dda37fbddee4a3dd041839bc98f1cc1444dc74f7
+    revision: 8c593917a228752d877b76b3c2995b6d6b1ffbdb
     ref: HEAD
   monit
     git: https://github.com/phlipper/chef-monit.git
@@ -36,7 +36,7 @@ GRAPH
   build-essential (2.0.4)
   chef-mongodb (0.0.1)
     mongodb (>= 0.0.0)
-  chef-redis-server (0.0.2)
+  chef-redis-server (0.0.3)
     install_from (>= 0.0.0)
   chef-sugar (2.0.0)
   chef_handler (1.1.6)
@@ -49,7 +49,7 @@ GRAPH
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   install_from (3.0.4)
-  java (1.22.0)
+  java (1.25.0)
   memcached (1.7.2)
     runit (~> 1.0)
     yum (~> 3.0)
@@ -85,14 +85,14 @@ GRAPH
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
-  simple_iptables (0.6.4)
+  simple_iptables (0.6.5)
   sudo (2.6.0)
   users (1.7.0)
   vim (1.1.2)
-  windows (1.31.0)
+  windows (1.33.1)
     chef_handler (>= 0.0.0)
   yum (3.2.2)
-  yum-epel (0.3.6)
+  yum-epel (0.4.0)
     yum (~> 3.0)
-  yum-mysql-community (0.1.8)
-    yum (>= 3.0.0)
+  yum-mysql-community (0.1.10)
+    yum (>= 3.0)
