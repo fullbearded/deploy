@@ -1,3 +1,7 @@
+execute 'update yum' do
+  command 'yum update -y'
+end
+
 node['server-basic']['basic_package'].each do |_package|
   package _package
 end

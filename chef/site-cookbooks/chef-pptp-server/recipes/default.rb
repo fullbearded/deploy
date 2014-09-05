@@ -11,9 +11,6 @@ execute 'install pptpd' do
   command "/bin/bash /tmp/pptpd.sh"
 end
 
-
-p "############## Account #############"
 node[:chef_pptp_server][:client_accts].each do |user, pass|
   p "VPN service is installed, your VPN username is #{user}, VPN password is #{pass}"
 end
-p "#####################################"

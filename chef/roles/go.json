@@ -1,0 +1,13 @@
+{
+    "name": "go",
+    "description": "delivery software go",
+    "default_attributes": {
+    },
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[chef-go]"
+    ],
+    "chef_type": "role",
+    "override_attributes": {
+    }
+}
