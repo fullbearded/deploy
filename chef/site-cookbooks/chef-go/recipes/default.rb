@@ -1,8 +1,5 @@
 include_recipe 'simple_iptables'
 
-# rpm -Uvh http://download.go.cd/gocd-rpm/go-server-14.2.0-377.noarch.rpm
-# rpm -Uvh http://download.go.cd/gocd-rpm/go-agent-14.2.0-377.noarch.rpm
-
 package "java-1.7.0-openjdk-devel"
 
 remote_file "download go server npm" do
@@ -46,10 +43,12 @@ simple_iptables_rule "http" do
   jump "ACCEPT"
 end
 
-#execute "start go server" do
-#  command 'service go-server start'
-#end
+execute "start go server" do
+  command 'service go-server start'
+end
 
+# why need update hostname to /etc/hosts ?
+# reason: https://gist.github.com/huhongda/814ee91f09aecae267d7
 execute 'update hostname' do
   command 'echo "127.0.0.1 `hostname`" >> /etc/hosts'
 end
